@@ -26,8 +26,8 @@ imagesavealpha( $image, true );
 $white = imagecolorallocate($image, 255, 255, 255);
 imagefill($image, 0, 0, $white);
 
-set_images($image, $ship_image, str_split($_GET["ships"], 2), $width, $height);
-set_images($image, $cross_image, str_split($_GET["crosses"], 2), $width, $height);
+if($_GET["ships"]) set_images($image, $ship_image, str_split($_GET["ships"], 2), $width, $height);
+if($_GET["crosses"]) set_images($image, $cross_image, str_split($_GET["crosses"], 2), $width, $height);
 
 $black = imagecolorallocate($image, 233, 14, 91);
 
