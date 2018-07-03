@@ -1,7 +1,7 @@
 <?php
-$ship_path = $_ENV["ship"];
-$cross_path = $_ENV["cross"];
-$font = $_ENV["font"];
+$ship_path = __DIR__ . "/resources/ship.png";
+$cross_path = __DIR__ . "/resources/cross.png";
+$font = __DIR__ . "/roboto-regular.ttf";
 $font_size = '12';
 
 header('Content-Type: image/jpeg');
